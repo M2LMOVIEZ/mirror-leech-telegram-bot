@@ -170,7 +170,7 @@ class GoogleDriveHelper:
         # File body description
         file_metadata = {
             'name': file_name,
-            'description': '𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗯𝘆 𝗠𝗦𝗣 𝗠𝗶𝗿𝗿𝗼𝗿𝘀',
+            'description': '𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗯𝘆 𝗞𝗢𝗧 𝗕𝗢𝗧𝗦',
             'mimeType': mime_type,
         }
         try:
@@ -469,7 +469,7 @@ class GoogleDriveHelper:
     def create_directory(self, directory_name, parent_id):
         file_metadata = {
             "name": directory_name,
-            "description": "𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗯𝘆 𝗠𝗦𝗣 𝗠𝗶𝗿𝗿𝗼𝗿𝘀",
+            "description": "𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗯𝘆 𝗞𝗢𝗧 𝗕𝗢𝗧𝗦",
             "mimeType": self.__G_DRIVE_DIR_MIME_TYPE
         }
         if parent_id is not None:
@@ -754,7 +754,7 @@ class GoogleDriveHelper:
         for content in self.telegraph_content:
             self.path.append(
                 telegraph.create_page(
-                    title='𝗠𝗦𝗣 𝗠𝗶𝗿𝗿𝗼𝗿𝘀 𝗦𝗲𝗮𝗿𝗰𝗵',
+                    title='𝗞𝗢𝗧 𝗠𝗶𝗿𝗿𝗼𝗿𝘀 𝗦𝗲𝗮𝗿𝗰𝗵',
                     content=content
                 )["path"]
             )
