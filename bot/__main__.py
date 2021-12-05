@@ -61,12 +61,12 @@ def stats(update, context):
 
 def start(update, context):
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("𝗠𝗦𝗣 𝗕𝗼𝘁𝘀", "https://telegram.dog/MSPbots")
-    buttons.buildbutton("𝗦𝘂𝗽𝗽𝗼𝗿𝘁", "https://telegram.dog/MSPdiscussion")
+    buttons.buildbutton("𝗞𝗢𝗧 𝗕𝗢𝗧𝗦", "https://telegram.dog/KOT_BOTS")
+    buttons.buildbutton("𝗦𝘂𝗽𝗽𝗼𝗿𝘁", "https://telegram.dog/KOT_REPORS")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-𝗧𝗵𝗶𝘀 𝗯𝗼𝘁 𝗰𝗮𝗻 𝗺𝗶𝗿𝗿𝗼𝗿 𝗮𝗹𝗹 𝘆𝗼𝘂𝗿 𝗹𝗶𝗻𝗸𝘀 𝘁𝗼 𝗚𝗼𝗼𝗴𝗹𝗲 𝗗𝗿𝗶𝘃𝗲! 𝗢𝗻 𝗠𝗦𝗣 𝗟𝗲𝗲𝗰𝗵 𝘅 𝗠𝗶𝗿𝗿𝗼𝗿 𝗚𝗿𝗼𝘂𝗽
+𝗧𝗵𝗶𝘀 𝗯𝗼𝘁 𝗰𝗮𝗻 𝗺𝗶𝗿𝗿𝗼𝗿 𝗮𝗹𝗹 𝘆𝗼𝘂𝗿 𝗹𝗶𝗻𝗸𝘀 𝘁𝗼 𝗚𝗼𝗼𝗴𝗹𝗲 𝗗𝗿𝗶𝘃𝗲! 𝗢𝗻 𝗞𝗢𝗧 𝗖𝗟𝗢𝗨𝗗
 '''
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
